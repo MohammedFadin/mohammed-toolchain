@@ -1,6 +1,6 @@
 var http = require('http');
 
-const PORT = 3002 | process.env.PORT;
+const PORT = 3002 || process.env.PORT;
 
 function handleRequest (req, res){
 	res.end("It works! \nURL: " + req.url)
